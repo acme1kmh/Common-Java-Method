@@ -20,6 +20,7 @@ public class AES256Util {
 		this.iv = key.substring(0,  16);
 		byte[] keyBytes = new byte[16];
 		byte[] b = key.getBytes("UTF-8");
+		int len = b.length;
 		if(len>keyBytes.length){
 			len = keyBytes.length;
 		}
