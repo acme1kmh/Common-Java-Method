@@ -11,7 +11,8 @@ public class dateFormatUtil {
 	 * @param dateFormat
 	 * @return
 	 */
-	public static String getDate(String dateFormat){
+	public String getNowDate(String dateFormat){
 		return new SimpleDateFormat(dateFormat).format(new Date()).toString();
 	}
+	
 }
